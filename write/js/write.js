@@ -120,15 +120,15 @@ var write = {
         if(v < 0.1){
             resultLineWidth = this.lineWidthMax;
         }
-        else if(v > 10){
+        else if(v >8){
             resultLineWidth = this.lineWidthMin;
         }
         else{ // 根据速度赋予线条宽度值
-            resultLineWidth = this.lineWidthMax - (v-0.1)/(10-0.1)*(this.lineWidthMax - this.lineWidthMin)
+            resultLineWidth = this.lineWidthMax - (v-0.1)/(8-0.1)*(this.lineWidthMax - this.lineWidthMin)
         }
 
         //防止变化突然，使线条平滑，借鉴上次线条粗细取值
-        resultLineWidth = this.lastLineWidth * 2/3 + resultLineWidth /3;
+        resultLineWidth = this.lastLineWidth * 3/5 + resultLineWidth * 2/5;
 
         this.lastLineWidth = resultLineWidth;
         return resultLineWidth;

@@ -6,5 +6,6 @@ window.onload = function () {
     this.canvas = document.getElementById('canvas');
     paper.init(canvas);
     write.init(canvas);
+    controller.init(canvas);
 
 };

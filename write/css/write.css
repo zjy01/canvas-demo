@@ -3,3 +3,49 @@
     margin: 20px auto;
     border: #ff1722 5px solid;
 }
+
+/*控制器*/
+#controller{
+    text-align: center;
+}
+
+#controller>div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: gray 2px solid;
+}
+#black{
+    background: black;
+}
+#red{
+    background: red;
+}
+#green{
+    background: green;
+}
+#yellow{
+    background: yellow;
+}
+#purple{
+    background: purple;
+}
+#orange{
+    background: orange;
+}
+#blue{
+    background: blue;
+}
+#indigo{
+    background: indigo;
+}
+#controller>div.on{
+    border-color: red;
+}
+
+#reset{
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 34px;
+}
