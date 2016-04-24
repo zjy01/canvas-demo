@@ -55,7 +55,9 @@ define(function () {
             //出界
             self.canvas.onmouseout = function (e) {
                 e.preventDefault();
-                self.endWrite();
+                if(self.isWriting) {
+                    self.endWrite();
+                }
             };
 
             //下笔
@@ -80,6 +82,7 @@ define(function () {
                 self.endWrite();
             })
         },
+
         //描绘区
         startWrite: function (co) {
             this.isWriting = true;

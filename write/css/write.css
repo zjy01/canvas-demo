@@ -1,19 +1,12 @@
 #canvas{
-    display: block;
-    margin: 20px auto;
-    border: #ff1722 5px solid;
+    display: block;  margin: 20px auto;  border: #ff1722 5px solid;
 }
-
 /*控制器*/
 #controller{
     text-align: center;
 }
-
 #controller>div{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: gray 2px solid;
+    display: inline-block;  width: 30px;  height: 30px;  border: gray 2px solid;
 }
 #black{
     background: black;
@@ -42,10 +35,6 @@
 #controller>div.on{
     border-color: red;
 }
-
 #reset{
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 34px;
+    display: inline-block;  vertical-align: top;  width: 50px;  height: 34px;
 }
